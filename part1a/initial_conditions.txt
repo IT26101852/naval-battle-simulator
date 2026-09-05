@@ -1,0 +1,10 @@
+===== INITIAL BATTLEFIELD CONDITIONS =====
+Canvas size (D): 550.20 (battlefield is 550.20 x 550.20)
+
+--- Battleship ---
+Type: USS Iowa (BB-61) (U)
+Position: (181.55, 379.99)
+Max shell velocity (Vmax_B): 900.00
+
+--- Escort Ships (N = 1) ---
+E1 | Type: Gabbiano-class Corvette (EB) | Position: (113.49, 137.62) | ImpactPower: 0.06 | AngleRange: 30 | MinAngle: 38.19 | MaxAngle: 68.19 | MinV: 179.54 | MaxV: 396.87

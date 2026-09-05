@@ -1,0 +1,12 @@
+===== PART 1-A SIMULATION RESULT =====
+OUTCOME: Battleship SURVIVES
+
+--- Escort ships hit by Battleship ---
+E1 | Type: EB | Time to hit: 0.6693 seconds
+
+Total escort ships hit: 1 out of 1
+Battle duration: 0.6693 seconds
+
+--- Final Battlefield Conditions ---
+Battleship position: (181.55, 379.99) - SURVIVED
+E1 | Type: EB | Position: (113.49, 137.62) | Status: DESTROYED
