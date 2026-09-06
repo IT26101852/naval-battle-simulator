@@ -1,0 +1,10 @@
+===== PART 1-B SIMULATION RESULT (Simulation 1 - Moving Battleship) =====
+Number of path points (k): 5
+
+--- Iteration 1: Battleship at (460.01, 26.99) ---
+OUTCOME: Battleship SUNK by E2 (EB) at t=4.2623 s
+
+--- Final Summary ---
+Iterations completed: 1 out of 5
+Battleship status: DESTROYED
+Total escort ships destroyed: 0 out of 8
