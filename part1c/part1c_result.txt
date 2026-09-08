@@ -1,0 +1,48 @@
+===== PART 1-C SIMULATION RESULT (Cumulative Damage) =====
+
+--- Escort ship hits on Battleship (in time order) ---
+t=3.5924 s | E10 (EB) hits B | impact: 0.06 | damage: 0.00% -> 6.00%
+t=3.8595 s | E13 (EE) hits B | impact: 0.04 | damage: 6.00% -> 10.00%
+t=6.4432 s | E8 (ED) hits B | impact: 0.05 | damage: 10.00% -> 15.00%
+t=7.7130 s | E3 (EA) hits B | impact: 0.08 | damage: 15.00% -> 23.00%
+t=8.3696 s | E6 (ED) hits B | impact: 0.05 | damage: 23.00% -> 28.00%
+t=10.3636 s | E14 (ED) hits B | impact: 0.05 | damage: 28.00% -> 33.00%
+t=10.8683 s | E11 (EC) hits B | impact: 0.07 | damage: 33.00% -> 40.00%
+
+OUTCOME: Battleship SURVIVES with 40.00% cumulative damage
+
+--- Escort ships destroyed by Battleship ---
+E1 (ED) destroyed, time to hit: 4.5336 s
+E2 (EC) destroyed, time to hit: 8.1107 s
+E3 (EA) destroyed, time to hit: 5.2077 s
+E4 (ED) destroyed, time to hit: 1.7044 s
+E5 (EE) destroyed, time to hit: 3.8771 s
+E6 (ED) destroyed, time to hit: 6.0729 s
+E7 (EC) destroyed, time to hit: 2.2875 s
+E8 (ED) destroyed, time to hit: 6.2793 s
+E9 (ED) destroyed, time to hit: 4.5558 s
+E10 (EB) destroyed, time to hit: 2.7946 s
+E11 (EC) destroyed, time to hit: 6.4389 s
+E12 (EB) destroyed, time to hit: 8.2771 s
+E13 (EE) destroyed, time to hit: 2.8335 s
+E14 (ED) destroyed, time to hit: 7.4658 s
+E15 (EC) destroyed, time to hit: 4.6784 s
+Total escort ships destroyed by B: 15 out of 15
+
+--- Final Battlefield Conditions ---
+Battleship position: (855.45, 502.10) | Cumulative damage: 40.00% | Status: SURVIVED
+E1 | Type: ED | Position: (503.81, 761.01) | Status: DESTROYED
+E2 | Type: EC | Position: (241.80, 84.81) | Status: DESTROYED
+E3 | Type: EA | Position: (730.79, 982.64) | Status: DESTROYED
+E4 | Type: ED | Position: (770.52, 641.08) | Status: DESTROYED
+E5 | Type: EE | Position: (481.25, 440.00) | Status: DESTROYED
+E6 | Type: ED | Position: (315.85, 307.16) | Status: DESTROYED
+E7 | Type: EC | Position: (984.64, 686.64) | Status: DESTROYED
+E8 | Type: ED | Position: (308.64, 266.94) | Status: DESTROYED
+E9 | Type: ED | Position: (415.49, 472.41) | Status: DESTROYED
+E10 | Type: EB | Position: (647.38, 678.18) | Status: DESTROYED
+E11 | Type: EC | Position: (330.13, 807.77) | Status: DESTROYED
+E12 | Type: EB | Position: (196.01, 869.26) | Status: DESTROYED
+E13 | Type: EE | Position: (972.15, 247.35) | Status: DESTROYED
+E14 | Type: ED | Position: (328.78, 954.12) | Status: DESTROYED
+E15 | Type: EC | Position: (790.59, 59.65) | Status: DESTROYED
