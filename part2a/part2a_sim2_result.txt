@@ -1,0 +1,47 @@
+===== PART 2-A SIMULATION RESULT - Moving Battleship (Simulation 2 - Jammed Gun) =====
+Number of path points (k): 5 | Reload time (T_B): 3.00 s
+
+--- Iteration 1: Battleship at (30.09, 87.60) [Damage so far: 0.00%] ---
+Target E8 (EE) | launch t=0.0000, impact t=0.3465 | PREEMPTED (shell would land t=0.8050)
+Target E3 (EB) | launch t=3.0000, impact t=3.1733 | not a threat
+Target E1 (ED) | launch t=6.0000, impact t=6.1873 | not a threat
+Target E10 (EA) | launch t=9.0000, impact t=9.2200 | not a threat
+Target E2 (ED) | launch t=12.0000, impact t=12.2511 | not a threat
+Target E6 (EA) | launch t=15.0000, impact t=15.2704 | not a threat
+Target E9 (EB) | launch t=18.0000, impact t=18.2877 | not a threat
+Target E7 (EB) | launch t=21.0000, impact t=21.3101 | not a threat
+Target E4 (EA) | launch t=24.0000, impact t=24.3198 | not a threat
+Target E5 (ED) | launch t=27.0000, impact t=27.4062 | not a threat
+Escort ships destroyed this iteration: 10
+
+--- Iteration 2: Battleship at (79.46, 95.09) [Damage so far: 0.00%] ---
+Escort ships destroyed this iteration: 0
+
+--- Iteration 3: Battleship at (11.33, 26.47) [GUN JAMMED] [Damage so far: 0.00%] ---
+Escort ships destroyed this iteration: 0
+
+--- Iteration 4: Battleship at (82.48, 4.50) [GUN JAMMED] [Damage so far: 0.00%] ---
+Escort ships destroyed this iteration: 0
+
+--- Iteration 5: Battleship at (67.90, 65.77) [GUN JAMMED] [Damage so far: 0.00%] ---
+Escort ships destroyed this iteration: 0
+
+
+--- Final Summary ---
+Iterations completed: 5 out of 5
+Battleship cumulative damage: 0.00%
+Battleship status: SURVIVED
+
+--- Final Escort Ship Status ---
+E1 | Type: ED | Position: (22.38, 69.45) | Status: DESTROYED
+E2 | Type: ED | Position: (21.73, 53.16) | Status: DESTROYED
+E3 | Type: EB | Position: (16.67, 77.36) | Status: DESTROYED
+E4 | Type: EA | Position: (0.05, 38.58) | Status: DESTROYED
+E5 | Type: ED | Position: (84.93, 12.80) | Status: DESTROYED
+E6 | Type: EA | Position: (23.72, 47.01) | Status: DESTROYED
+E7 | Type: EB | Position: (83.29, 78.11) | Status: DESTROYED
+E8 | Type: EE | Position: (97.50, 90.97) | Status: DESTROYED
+E9 | Type: EB | Position: (75.58, 77.84) | Status: DESTROYED
+E10 | Type: EA | Position: (39.69, 62.14) | Status: DESTROYED
+
+Total escort ships destroyed: 10 out of 10
