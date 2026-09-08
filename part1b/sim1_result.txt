@@ -1,10 +1,21 @@
 ===== PART 1-B SIMULATION RESULT (Simulation 1 - Moving Battleship) =====
 Number of path points (k): 5
 
---- Iteration 1: Battleship at (460.01, 26.99) ---
-OUTCOME: Battleship SUNK by E2 (EB) at t=4.2623 s
+--- Iteration 1: Battleship at (209.41, 758.12) ---
+OUTCOME: Battleship SUNK by E4 (EE) at t=3.0352 s
 
 --- Final Summary ---
 Iterations completed: 1 out of 5
 Battleship status: DESTROYED
+
+--- Final Escort Ship Status ---
+E1 | Type: ED | Position: (628.56, 15.67) | Status: ALIVE
+E2 | Type: EB | Position: (247.52, 481.32) | Status: ALIVE
+E3 | Type: EC | Position: (180.11, 630.36) | Status: ALIVE
+E4 | Type: EE | Position: (267.66, 28.41) | Status: ALIVE
+E5 | Type: EC | Position: (361.45, 226.94) | Status: ALIVE
+E6 | Type: EB | Position: (974.14, 689.50) | Status: ALIVE
+E7 | Type: EB | Position: (174.22, 685.32) | Status: ALIVE
+E8 | Type: EC | Position: (92.96, 973.82) | Status: ALIVE
+
 Total escort ships destroyed: 0 out of 8
