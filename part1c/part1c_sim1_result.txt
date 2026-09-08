@@ -1,0 +1,62 @@
+===== PART 1-C SIMULATION RESULT - Moving Battleship (Simulation 1 - Moving Battleship) =====
+Number of path points (k): 5
+
+--- Iteration 1: Battleship at (39.58, 564.56) [Damage so far: 0.00%] ---
+t=4.8936 s | E5 (EC) hits B | impact: 0.07 | damage: 0.00% -> 7.00%
+t=5.6620 s | E8 (ED) hits B | impact: 0.05 | damage: 7.00% -> 12.00%
+t=11.6304 s | E11 (ED) hits B | impact: 0.05 | damage: 12.00% -> 17.00%
+t=13.7081 s | E2 (ED) hits B | impact: 0.05 | damage: 17.00% -> 22.00%
+t=16.1803 s | E15 (EB) hits B | impact: 0.06 | damage: 22.00% -> 28.00%
+E1 (ED) destroyed by B, time to hit: 3.1880 s
+E2 (ED) destroyed by B, time to hit: 3.7041 s
+E3 (ED) destroyed by B, time to hit: 9.6885 s
+E4 (EE) destroyed by B, time to hit: 8.0923 s
+E5 (EC) destroyed by B, time to hit: 4.3659 s
+E6 (EC) destroyed by B, time to hit: 6.9300 s
+E7 (EB) destroyed by B, time to hit: 10.0340 s
+E8 (ED) destroyed by B, time to hit: 4.5753 s
+E9 (ED) destroyed by B, time to hit: 11.2112 s
+E10 (EA) destroyed by B, time to hit: 5.2204 s
+E11 (ED) destroyed by B, time to hit: 9.2209 s
+E12 (EB) destroyed by B, time to hit: 2.6120 s
+E13 (EE) destroyed by B, time to hit: 5.7483 s
+E14 (EC) destroyed by B, time to hit: 2.4757 s
+E15 (EB) destroyed by B, time to hit: 5.9092 s
+Escort ships destroyed this iteration: 15
+
+--- Iteration 2: Battleship at (265.00, 968.96) [Damage so far: 28.00%] ---
+Escort ships destroyed this iteration: 0
+
+--- Iteration 3: Battleship at (540.26, 389.87) [Damage so far: 28.00%] ---
+Escort ships destroyed this iteration: 0
+
+--- Iteration 4: Battleship at (712.27, 67.86) [Damage so far: 28.00%] ---
+Escort ships destroyed this iteration: 0
+
+--- Iteration 5: Battleship at (584.52, 478.22) [Damage so far: 28.00%] ---
+Escort ships destroyed this iteration: 0
+
+
+--- Final Summary ---
+Iterations completed: 5 out of 5
+Battleship cumulative damage: 28.00%
+Battleship status: SURVIVED
+
+--- Final Escort Ship Status ---
+E1 | Type: ED | Position: (56.84, 250.29) | Status: DESTROYED
+E2 | Type: ED | Position: (50.58, 201.61) | Status: DESTROYED
+E3 | Type: ED | Position: (875.69, 423.14) | Status: DESTROYED
+E4 | Type: EE | Position: (544.09, 24.96) | Status: DESTROYED
+E5 | Type: EC | Position: (321.08, 878.59) | Status: DESTROYED
+E6 | Type: EC | Position: (651.08, 352.57) | Status: DESTROYED
+E7 | Type: EB | Position: (790.97, 120.37) | Status: DESTROYED
+E8 | Type: ED | Position: (178.24, 141.98) | Status: DESTROYED
+E9 | Type: ED | Position: (849.77, 105.02) | Status: DESTROYED
+E10 | Type: EA | Position: (180.14, 85.88) | Status: DESTROYED
+E11 | Type: ED | Position: (772.29, 929.38) | Status: DESTROYED
+E12 | Type: EB | Position: (194.65, 765.95) | Status: DESTROYED
+E13 | Type: EE | Position: (581.32, 641.36) | Status: DESTROYED
+E14 | Type: EC | Position: (284.22, 554.44) | Status: DESTROYED
+E15 | Type: EB | Position: (154.05, 16.16) | Status: DESTROYED
+
+Total escort ships destroyed: 15 out of 15
