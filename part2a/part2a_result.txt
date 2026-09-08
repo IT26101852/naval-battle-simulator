@@ -1,0 +1,33 @@
+===== PART 2-A SIMULATION RESULT (Reload Time + Attack Order) =====
+Battleship reload time (T_B): 5.00 s
+
+--- Battleship Attack Order ---
+Target E6 (EA) | B launches at t=0.0000, impacts at t=0.7424 | PREEMPTED before its shell (would land t=1.9452)
+Target E1 (EC) | B launches at t=5.0000, impacts at t=5.5109 | PREEMPTED before its shell (would land t=26.6287)
+Target E5 (EE) | B launches at t=10.0000, impacts at t=11.0601 | PREEMPTED before its shell (would land t=27.1898)
+Target E7 (ED) | B launches at t=15.0000, impacts at t=15.2682 | not a threat
+Target E10 (EB) | B launches at t=20.0000, impacts at t=20.5261 | not a threat
+Target E9 (EC) | B launches at t=25.0000, impacts at t=25.6635 | not a threat
+Target E8 (EA) | B launches at t=30.0000, impacts at t=30.7090 | not a threat
+Target E2 (EC) | B launches at t=35.0000, impacts at t=35.7928 | not a threat
+Target E4 (EA) | B launches at t=40.0000, impacts at t=40.8310 | not a threat
+Target E3 (ED) | B launches at t=45.0000, impacts at t=45.8875 | not a threat
+
+--- Damage applied to Battleship (in time order) ---
+
+OUTCOME: Battleship SURVIVES with 0.00% cumulative damage
+
+--- Final Battlefield Conditions ---
+Battleship position: (530.86, 956.53) | Cumulative damage: 0.00% | Status: SURVIVED
+E1 | Type: EC | Position: (386.48, 930.44) | Status: DESTROYED
+E2 | Type: EC | Position: (177.65, 964.70) | Status: DESTROYED
+E3 | Type: ED | Position: (197.95, 664.74) | Status: DESTROYED
+E4 | Type: EA | Position: (337.67, 619.94) | Status: DESTROYED
+E5 | Type: EE | Position: (95.84, 498.62) | Status: DESTROYED
+E6 | Type: EA | Position: (221.60, 974.39) | Status: DESTROYED
+E7 | Type: ED | Position: (570.41, 964.88) | Status: DESTROYED
+E8 | Type: EA | Position: (594.13, 681.21) | Status: DESTROYED
+E9 | Type: EC | Position: (453.35, 721.57) | Status: DESTROYED
+E10 | Type: EB | Position: (662.19, 873.11) | Status: DESTROYED
+
+Total escort ships destroyed: 10 out of 10
