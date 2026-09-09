@@ -1,0 +1,36 @@
+===== PART 2-B SIMULATION RESULT (Continuous Escort Fire) =====
+Battleship reload time (T_B): 5.00 s
+Escort reload times (T_E): EA=2.58 EB=3.86 EC=1.60 ED=1.71 EE=3.81 
+
+--- Battleship Attack Order & Escort Hit Generation ---
+Target E3 (EE) | B destroys it at t=0.8116 | fired 0 successful shot(s) before being destroyed
+Target E6 (EE) | B destroys it at t=6.1133 | fired 0 successful shot(s) before being destroyed
+Target E1 (EB) | B destroys it at t=11.9251 | fired 2 successful shot(s) before being destroyed
+Target E4 (EA) | B destroys it at t=16.2431 | fired 0 successful shot(s) before being destroyed
+Target E8 (EB) | B destroys it at t=20.7805 | not a threat
+Target E5 (EA) | B destroys it at t=25.7823 | not a threat
+Target E2 (EE) | B destroys it at t=30.8568 | not a threat
+Target E7 (EC) | B destroys it at t=35.8777 | not a threat
+Target E10 (EB) | B destroys it at t=41.0411 | not a threat
+Target E9 (EC) | B destroys it at t=46.1319 | not a threat
+
+--- Damage applied to Battleship (in time order) ---
+t=8.0491 s | E1 (EB) | impact: 0.06 | damage: 0.00% -> 6.00%
+t=11.9126 s | E1 (EB) | impact: 0.06 | damage: 6.00% -> 12.00%
+
+OUTCOME: Battleship SURVIVES with 12.00% cumulative damage
+
+--- Final Battlefield Conditions ---
+Battleship position: (740.61, 74.20) | Cumulative damage: 12.00% | Status: SURVIVED
+E1 | Type: EB | Position: (190.33, 958.32) | Status: DESTROYED
+E2 | Type: EE | Position: (562.81, 446.52) | Status: DESTROYED
+E3 | Type: EE | Position: (529.97, 378.67) | Status: DESTROYED
+E4 | Type: EA | Position: (241.02, 784.63) | Status: DESTROYED
+E5 | Type: EA | Position: (811.34, 410.87) | Status: DESTROYED
+E6 | Type: EE | Position: (904.77, 751.19) | Status: DESTROYED
+E7 | Type: EC | Position: (347.91, 256.63) | Status: DESTROYED
+E8 | Type: EB | Position: (713.26, 415.51) | Status: DESTROYED
+E9 | Type: EC | Position: (698.66, 793.10) | Status: DESTROYED
+E10 | Type: EB | Position: (398.66, 578.39) | Status: DESTROYED
+
+Total escort ships destroyed: 10 out of 10
