@@ -1,0 +1,14 @@
+===== INITIAL BATTLEFIELD CONDITIONS =====
+Canvas size (D): 550.20 (battlefield is 550.20 x 550.20)
+
+--- Battleship ---
+Type: USS Iowa (BB-61) (U)
+Position: (1.00, 0.00)
+Max shell velocity (Vmax_B): 397.98
+
+--- Escort Ships (N = 5) ---
+E1 | Type: Gabbiano-class Corvette (EB) | Position: (232.45, 113.49) | ImpactPower: 0.06 | AngleRange: 30 | MinAngle: 15.01 | MaxAngle: 45.01 | MinV: 145.48 | MaxV: 363.54
+E2 | Type: 1936A-class Destroyer (EA) | Position: (13.71, 200.82) | ImpactPower: 0.08 | AngleRange: 20 | MinAngle: 53.58 | MaxAngle: 73.58 | MinV: 97.68 | MaxV: 477.57
+E3 | Type: Japanese Kaibokan (EE) | Position: (58.73, 418.53) | ImpactPower: 0.04 | AngleRange: 70 | MinAngle: 1.63 | MaxAngle: 71.63 | MinV: 132.64 | MaxV: 282.47
+E4 | Type: Japanese Kaibokan (EE) | Position: (540.17, 120.41) | ImpactPower: 0.04 | AngleRange: 70 | MinAngle: 9.09 | MaxAngle: 79.09 | MinV: 127.80 | MaxV: 282.84
+E5 | Type: Japanese Kaibokan (EE) | Position: (400.85, 346.01) | ImpactPower: 0.04 | AngleRange: 70 | MinAngle: 15.92 | MaxAngle: 85.92 | MinV: 137.56 | MaxV: 209.11

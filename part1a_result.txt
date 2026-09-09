@@ -1,0 +1,13 @@
+===== PART 1-A SIMULATION RESULT =====
+OUTCOME: Battleship SUNK
+Sunk by Escort Ship index: 3 (Type: EE)
+Time to sink: 1.5672 seconds
+Fired velocity: 269.68, angle: 1.63
+
+--- Final Battlefield Conditions ---
+Battleship position: (1.00, 0.00) - DESTROYED
+E1 | Type: EB | Position: (232.45, 113.49) | Status: ALIVE
+E2 | Type: EA | Position: (13.71, 200.82) | Status: ALIVE
+E3 | Type: EE | Position: (58.73, 418.53) | Status: ALIVE
+E4 | Type: EE | Position: (540.17, 120.41) | Status: ALIVE
+E5 | Type: EE | Position: (400.85, 346.01) | Status: ALIVE

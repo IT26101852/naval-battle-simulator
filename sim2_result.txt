@@ -1,0 +1,18 @@
+===== PART 1-B SIMULATION RESULT (Simulation 2 - Jammed Gun) =====
+Number of path points (k): 5
+
+--- Iteration 1: Battleship at (191.54, 379.63) ---
+OUTCOME: Battleship SUNK by E1 (EE) at t=6.3225 s
+
+--- Final Summary ---
+Iterations completed: 1 out of 5
+Battleship status: DESTROYED
+
+--- Final Escort Ship Status ---
+E1 | Type: EE | Position: (633.77, 861.07) | Status: ALIVE
+E2 | Type: ED | Position: (853.08, 705.35) | Status: ALIVE
+E3 | Type: EA | Position: (387.96, 807.63) | Status: ALIVE
+E4 | Type: EE | Position: (83.13, 564.62) | Status: ALIVE
+E5 | Type: ED | Position: (673.93, 852.83) | Status: ALIVE
+
+Total escort ships destroyed: 0 out of 5

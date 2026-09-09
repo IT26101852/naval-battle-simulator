@@ -2,91 +2,212 @@
 #include <stdlib.h>
 #include <time.h>
 
-// External function prototypes
-void run_part_1a();
-void run_part_1b();
-void run_part_1c();
-void run_part_2a();
-void run_part_2b();
+void showMainMenu(void);
+void showInstructions(void);
+void setupMenu(void);
+void startSimulation(void);
+void showStatistics(void);
 
-void setup_menu(unsigned int *seed) {
+unsigned int simulationSeed = 0;
+
+int main(void)
+{
     int choice;
-    printf("\n--- SETUP SUBMENU ---\n");
-    printf("1. Set Seed Value\n");
-    printf("2. Return to Main Menu\n");
-    printf("Enter choice: ");
-    scanf("%d", &choice);
-    
-    if (choice == 1) {
-        printf("Enter Seed Value: ");
-        scanf("%u", seed);
-        srand(*seed);
-        printf(">>> Success: Seed updated to %u!\n", *seed);
-    }
-}
 
-void start_simulation_menu() {
-    int choice;
-    printf("\n--- SELECT SIMULATION PART ---\n");
-    printf("1. Part 1-A\n2. Part 1-B\n3. Part 1-C\n4. Part 2-A\n5. Part 2-B\n");
-    printf("Enter choice: ");
-    scanf("%d", &choice);
+    simulationSeed = (unsigned int)time(NULL);
+    srand(simulationSeed);
 
-    switch(choice) {
-        case 1: run_part_1a(); break;
-        case 2: run_part_1b(); break;
-        case 3: run_part_1c(); break;
-        case 4: run_part_2a(); break;
-        case 5: run_part_2b(); break;
-        default: printf(">>> Invalid Selection!\n");
-    }
-}
+    do
+    {
+        showMainMenu();
 
-void view_statistics() {
-    FILE *file = fopen("simulation_results.txt", "r");
-    if (file == NULL) {
-        printf("\n>>> No previous simulation results found.\n");
-        return;
-    }
-    
-    char ch;
-    printf("\n=== PAST SIMULATION STATISTICS ===\n");
-    while ((ch = fgetc(file)) != EOF) {
-        putchar(ch);
-    }
-    fclose(file);
-    printf("\n===================================\n");
-}
-
-int main() {
-    int choice;
-    unsigned int seed = (unsigned int)time(NULL);
-    srand(seed);
-
-    while(1) {
-        printf("\n====================================\n");
-        printf("   NAVAL BATTLE SIMULATOR MAIN MENU\n");
-        printf("====================================\n");
-        printf("1. Start Simulation\n");
-        printf("2. Setup\n");
-        printf("3. View Instructions\n");
-        printf("4. Simulation Statistics\n");
-        printf("5. Exit\n");
-        printf("Enter option: ");
+        printf("Enter your choice: ");
         scanf("%d", &choice);
 
-        switch(choice) {
-            case 1: start_simulation_menu(); break;
-            case 2: setup_menu(&seed); break;
-            case 3: 
-                printf("\n--- INSTRUCTIONS ---\n");
-                printf("1. Set seed value in Setup for reproducible runs.\n");
-                printf("2. Select 'Start Simulation' to execute battle parts.\n");
+        switch (choice)
+        {
+            case 1:
+                startSimulation();
                 break;
-            case 4: view_statistics(); break;
-            case 5: exit(0);
-            default: printf(">>> Invalid choice!\n");
+
+            case 2:
+                showInstructions();
+                break;
+
+            case 3:
+                showStatistics();
+                break;
+
+            case 4:
+                printf("\nExiting Naval Battle Simulator...\n");
+                break;
+
+            default:
+                printf("\nInvalid choice. Please try again.\n");
         }
-    }
+
+    } while (choice != 4);
+
     return 0;
+}
+
+
+/* =========================
+   MAIN MENU
+   ========================= */
+
+void showMainMenu(void)
+{
+    printf("\n========================================\n");
+    printf("       ADVANCED NAVAL BATTLE SIMULATOR\n");
+    printf("========================================\n");
+    printf("1. Start Simulation\n");
+    printf("2. View Instructions\n");
+    printf("3. Simulation Statistics\n");
+    printf("4. Exit\n");
+    printf("========================================\n");
+}
+
+
+/* =========================
+   INSTRUCTIONS
+   ========================= */
+
+void showInstructions(void)
+{
+    printf("\n========== INSTRUCTIONS ==========\n");
+    printf("1. Select Start Simulation from the main menu.\n");
+    printf("2. Select the required simulation part.\n");
+    printf("3. Use Setup Menu to configure the random seed.\n");
+    printf("4. View saved output files under Simulation Statistics.\n");
+    printf("==================================\n");
+}
+
+
+/* =========================
+   SETUP MENU
+   ========================= */
+
+void setupMenu(void)
+{
+    int choice;
+    unsigned int newSeed;
+
+    do
+    {
+        printf("\n========== SETUP MENU ==========\n");
+        printf("1. Battleship Properties\n");
+        printf("2. Escort Settings\n");
+        printf("3. Seed Value\n");
+        printf("4. Return to Main Menu\n");
+        printf("================================\n");
+
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+            case 1:
+                printf("\nBattleship properties are handled by the simulation.\n");
+                break;
+
+            case 2:
+                printf("\nEscort settings are handled by the simulation.\n");
+                break;
+
+            case 3:
+                printf("\nCurrent seed: %u\n", simulationSeed);
+                printf("Enter new seed value: ");
+                scanf("%u", &newSeed);
+
+                simulationSeed = newSeed;
+                srand(simulationSeed);
+
+                printf("Seed changed to %u successfully.\n",
+                       simulationSeed);
+                break;
+
+            case 4:
+                printf("\nReturning to Main Menu...\n");
+                break;
+
+            default:
+                printf("\nInvalid choice.\n");
+        }
+
+    } while (choice != 4);
+}
+
+
+/* =========================
+   START SIMULATION
+   ========================= */
+
+void startSimulation(void)
+{
+    int choice;
+
+    printf("\n---------- START SIMULATION ----------\n");
+    printf("1. Part 1-A\n");
+    printf("2. Part 1-B\n");
+    printf("3. Part 1-C\n");
+    printf("4. Part 2-A\n");
+    printf("5. Part 2-B\n");
+    printf("6. Setup Menu\n");
+    printf("7. Return to Main Menu\n");
+
+    printf("Select simulation: ");
+    scanf("%d", &choice);
+
+    switch (choice)
+    {
+        case 1:
+            printf("\nRunning Part 1-A...\n");
+            system("./part1a/test_program");
+            break;
+
+        case 2:
+            printf("\nRunning Part 1-B...\n");
+            system("./part1b/test_program");
+            break;
+
+        case 3:
+            printf("\nRunning Part 1-C...\n");
+            system("./part1c/test_program");
+            break;
+
+        case 4:
+            printf("\nRunning Part 2-A...\n");
+            system("./part2a/test_program");
+            break;
+
+        case 5:
+            printf("\nRunning Part 2-B...\n");
+            system("./part2b/test_program");
+            break;
+
+        case 6:
+            setupMenu();
+            break;
+
+        case 7:
+            printf("\nReturning to Main Menu...\n");
+            break;
+
+        default:
+            printf("\nInvalid choice.\n");
+    }
+}
+
+
+/* =========================
+   SIMULATION STATISTICS
+   ========================= */
+
+void showStatistics(void)
+{
+    printf("\n---------- SIMULATION STATISTICS ----------\n");
+    printf("Simulation Seed: %u\n", simulationSeed);
+    printf("Result files are saved inside the part folders.\n");
+    printf("-------------------------------------------\n");
 }
